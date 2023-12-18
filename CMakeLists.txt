@@ -7,6 +7,8 @@ find_package(GTest REQUIRED)
 # Include headers
 include_directories(include)
 
+add_subdirectory(tests)
+
 # Add the source files
 set(SOURCE_FILES
     src/RiceCooker.cpp
