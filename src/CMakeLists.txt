@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.10)
-project(RiceCookerProject)
+set(SOURCE_FILES
+    RiceCooker.cpp
+)
 
-add_subdirectory(src)
-add_subdirectory(tests)
+add_executable(RiceCooker ${SOURCE_FILES})
