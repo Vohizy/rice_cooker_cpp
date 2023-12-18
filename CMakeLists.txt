@@ -13,8 +13,11 @@ set(SOURCE_FILES
     tests/RiceCookerTest.cpp
 )
 
-# Create the executable
-add_executable(RiceCookerTest ${SOURCE_FILES})
+# Create the executable for your main program
+add_executable(RiceCooker ${SOURCE_FILES})
+
+# Create the executable for your tests
+add_executable(RiceCookerTest tests/RiceCookerTest.cpp)
 
 # Link against GTest and pthread library
 target_link_libraries(RiceCookerTest GTest::GTest GTest::Main pthread)
