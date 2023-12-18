@@ -11,7 +11,7 @@ jobs:
       - checkout
 
       # Install dependencies, adjust as needed
-      - run: apt-get update && apt-get install -y libgtest-dev clang-tidy
+      - run: apt-get update && apt-get install -y libgtest-dev clang-tidy cmake
 
       # Build and run tests
       - run:
